@@ -120,7 +120,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             )
         await CallbackQuery.answer()
         await music_off(chat_id)
-        await Anon.Irru_Ley_Poduvom_😁(chat_id)
+        await Anon.Irru_Ley_Poduvom(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_2"].format(mention),
             reply_markup=close_keyboard
