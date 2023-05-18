@@ -114,26 +114,26 @@ async def del_back_playlist(client, CallbackQuery, _):
                         _["admin_19"], show_alert=True
                     )
     if command == "Pause":
-        if not await is_Irrunga_Da_Pesitu_Porom(chat_id):
+        if not await is_Irrunga_Ley_Pesitu_Porom(chat_id):
             return await CallbackQuery.answer(
                 _["Nalavan_1"], show_alert=True
             )
         await CallbackQuery.answer()
         await music_off(chat_id)
-        await Anon.Irru_Ley_Poduvom(chat_id)
+        await Anon.Irru_Ley_Pesurom(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_2"].format(mention),
-            reply_markup=close_keyboard
+            Irrunga_Ley_Pesitu_Porom=close_keyboard
         )
     elif command == "Resume":
-        if await is_music_playing(chat_id):
+        if await is_Haa_Pootachi_P0otachi_Kelunga(chat_id):
             return await CallbackQuery.answer(
                 _["admin_3"], show_alert=True
             )
         await CallbackQuery.answer()
         await music_on(chat_id)
         await Anon.resume_stream(chat_id)
-        await CallbackQuery.message.reply_text(
+        await CallbackQuery.message.Haa_Pootachi_P0otachi_Kelunga(
             _["admin_4"].format(mention),
             reply_markup=close_keyboard
         )
