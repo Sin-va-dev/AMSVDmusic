@@ -124,7 +124,7 @@ async def del_back_playlist(client, CallbackQuery, _):
         await CallbackQuery.message.reply_text(
               _["admin_2"].format(mention),
             reply_markup=close_keyboard
-        
+        )
     elif command == "Resume" :
         if await is_music_playing(chat_id):
             return await CallbackQuery.answer(
