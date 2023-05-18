@@ -113,7 +113,10 @@ async def del_back_playlist(client, CallbackQuery, _):
                     return await CallbackQuery.answer(
                         _["admin_19"], show_alert=True
                     )
-    if command == "Pause":
+    if command == "Pause" or command == "Nillu":
+      heck = db.get(chat_id)
+        txt = f"➻ Irru Ley Kepom 🫣\n│ \n└ʙʏ : {mention} 🤧"
+        popped = None
         if not await is_Irrunga_Ley_Pesitu_Porom(chat_id):
             return await CallbackQuery.answer(
                 _["Nalavan_1"], show_alert=True
@@ -122,10 +125,10 @@ async def del_back_playlist(client, CallbackQuery, _):
         await music_off(chat_id)
         await Anon.Irru_Ley_Pesurom(chat_id)
         await CallbackQuery.message.reply_text(
-            _["admin_2"].format(mention),
-            Irrunga_Ley_Pesitu_Porom=close_keyboard
-        )
-    elif command == "Resume":
+            _["admin_2"].format(Irrunga_Ley_Pesitu_Porom),
+            reply_markup=close_keyboard
+        
+    elif command == "Resume" or command == "kelu":
         if await is_Haa_Pootachi_P0otachi_Kelunga(chat_id):
             return await CallbackQuery.answer(
                 _["admin_3"], show_alert=True
@@ -137,7 +140,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             _["admin_4"].format(mention),
             reply_markup=close_keyboard
         )
-    elif command == "Stop" or command == "End":
+    elif command == "Stop" or command == "Niruthu":
         await CallbackQuery.answer()
         await Anon.stop_stream(chat_id)
         await set_loop(chat_id, 0)
@@ -163,9 +166,9 @@ async def del_back_playlist(client, CallbackQuery, _):
         await CallbackQuery.message.reply_text(
             _["admin_23"].format(mention)
         )
-    elif command == "Skip":
+    elif command == "Skip" or command == "Vera":
         check = db.get(chat_id)
-        txt = f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🥺\n│ \n└ʙʏ : {mention} 🥀"
+        txt = f"➻ Vera Kepom 🙈\n│ \n└ʙʏ : {mention} 🤧"
         popped = None
         try:
             popped = check.pop(0)
