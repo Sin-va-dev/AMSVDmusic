@@ -86,7 +86,7 @@ async def unban_assistant_(_, CallbackQuery):
         )
 
 
-@app.on_callback_query(filters.regex("ADMIN") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("Admin nu Oora yemathuravanga 🙈") & ~BANNED_USERS)
 @languageCB
 async def del_back_playlist(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
@@ -114,13 +114,13 @@ async def del_back_playlist(client, CallbackQuery, _):
                         _["admin_19"], show_alert=True
                     )
     if command == "Pause":
-        if not await is_music_playing(chat_id):
+        if not await is_Song_Singing_BY(chat_id):
             return await CallbackQuery.answer(
                 _["admin_1"], show_alert=True
             )
         await CallbackQuery.answer()
         await music_off(chat_id)
-        await Anon.pause_stream(chat_id)
+        await Anon.Irru_Ley_Poduvom 🙂(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_2"].format(mention),
             reply_markup=close_keyboard
