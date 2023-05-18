@@ -300,7 +300,7 @@ class Call(PyTgCalls):
                 )
             except Exception as e:
                 raise AssistantErr(
-                    "**VC HA ON PANNITU PLAY PANNUNGA**\n\nᴩʟᴇᴀsᴇ ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ."
+                    "**V͎C͎ ͎H͎A͎ ͎O͎N͎ ͎P͎A͎N͎N͎I͎T͎U͎ ͎P͎L͎A͎Y͎ ͎P͎A͎N͎N͎U͎N͎G͎A͎**\n\nᴩʟᴇᴀsᴇ ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ."
                 )
         except AlreadyJoinedError:
             raise AssistantErr(
@@ -308,7 +308,7 @@ class Call(PyTgCalls):
             )
         except TelegramServerError:
             raise AssistantErr(
-                "**TELEGRAM SERVER MATTAI AYIDUCHI RESTART PANNUNGA USURU VANTHUDUM**\n\nᴩʟᴇᴀsᴇ ᴛᴜʀɴ ᴏғғ ᴀɴᴅ ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ ᴀɢᴀɪɴ."
+                "**ᴛᴇʟᴇɢʀᴀᴍ ꜱᴇʀᴠᴇʀ ᴍᴀᴛᴛᴀɪ ᴀʏɪᴅᴜᴄʜɪ ʀᴇꜱᴛᴀʀᴛ ᴘᴀɴɴᴜɴɢᴀ ᴜꜱᴜʀᴜ ᴠᴀɴᴛʜᴜᴅᴜᴍ**\n\nᴩʟᴇᴀsᴇ ᴛᴜʀɴ ᴏғғ ᴀɴᴅ ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ ᴀɢᴀɪɴ."
             )
         await add_active_chat(chat_id)
         await music_on(chat_id)
