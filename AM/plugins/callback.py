@@ -114,9 +114,9 @@ async def del_back_playlist(client, CallbackQuery, _):
                         _["admin_19"], show_alert=True
                     )
     if command == "Pause":
-        if not await is_Song_Singing_BY(chat_id):
+        if not await is_Irrunga_Da_Pesitu_Porom(chat_id):
             return await CallbackQuery.answer(
-                _["admin_1"], show_alert=True
+                _["Nalavan_1"], show_alert=True
             )
         await CallbackQuery.answer()
         await music_off(chat_id)
