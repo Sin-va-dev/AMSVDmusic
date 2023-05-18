@@ -115,7 +115,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     )
     if command == "Pause" or command == "Nillu":
       heck = db.get(chat_id)
-        txt = f"➻ Irru Ley Kepom 🫣\n│ \n└ʙʏ : {mention} 🤧"
+        txt = f"➻ Irru Ley Kepom \n│ \n└ʙʏ : {mention} 🤧"
         popped = None
         if not await is_Irrunga_Ley_Pesitu_Porom(chat_id):
             return await CallbackQuery.answer(
