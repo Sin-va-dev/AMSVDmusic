@@ -113,31 +113,31 @@ async def del_back_playlist(client, CallbackQuery, _):
                     return await CallbackQuery.answer(
                         _["admin_19"], show_alert=True
                     )
-    if command == "Pause" or command == "Nillu"
-        if not await is_Irrunga_Ley_Pesitu_Porom(chat_id):
+    if command == "Pause" :
+        if not await is_music_playing(chat_id):
             return await CallbackQuery.answer(
                 _["admin_1"], show_alert=True
             )
         await CallbackQuery.answer()
         await music_off(chat_id)
-        await Anon.Irru_Ley_Pesurom(chat_id)
+        await Anon.pause_stream(chat_id)
         await CallbackQuery.message.reply_text(
-            _["admin_2"].format(Irrunga_Ley_Pesitu_Porom),
+              _["admin_2"].format(mention),
             reply_markup=close_keyboard
         
-    elif command == "Resume" or command == "kelu":
-        if await is_Haa_Pootachi_P0otachi_Kelunga(chat_id):
+    elif command == "Resume" :
+        if await is_music_playing(chat_id):
             return await CallbackQuery.answer(
                 _["admin_3"], show_alert=True
             )
         await CallbackQuery.answer()
         await music_on(chat_id)
         await Anon.resume_stream(chat_id)
-        await CallbackQuery.message.Haa_Pootachi_P0otachi_Kelunga(
+        await CallbackQuery.message.message.reply_text(
             _["admin_4"].format(mention),
             reply_markup=close_keyboard
         )
-    elif command == "Stop" or command == "Niruthu":
+    elif command == "Stop" or command == "end":
         await CallbackQuery.answer()
         await Anon.stop_stream(chat_id)
         await set_loop(chat_id, 0)
