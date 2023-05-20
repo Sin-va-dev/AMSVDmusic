@@ -97,7 +97,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             try:
                 await message.reply_text(
-                    _["admin_35"].format(message.from_user.first_name, message.chat.title),
+                    _["admin_10"].format(message.from_user.first_name, message.chat.title),
                     reply_markup=close_keyboard
                 )
                 return await Anon.stop_stream(chat_id)
