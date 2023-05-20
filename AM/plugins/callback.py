@@ -178,7 +178,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     reply_markup=close_keyboard
                 )
                 await CallbackQuery.message.reply_text(
-                    _["admin_10"].format(mention, CallbackQuery.message.chat.title)
+                    _["admin_10.1"].format(mention, CallbackQuery.message.chat.title)
                 )
                 try:
                     return await Anon.stop_stream(chat_id)
