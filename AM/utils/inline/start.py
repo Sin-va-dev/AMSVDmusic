@@ -9,13 +9,13 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text=" 𝒜𝒞𝒞𝐸𝒫𝒯 𝑀𝐸 𝐼𝒩 𝒴𝒪𝒰𝑅 𝐵𝒜𝒮𝐸 ",
+                text=" נσιη мє ιη уσυя вαѕє ",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ],
         [
             InlineKeyboardButton(
-                text="𝓡𝓔𝓥𝓘𝓥𝓔-𝓗𝓔𝓛𝓟",
+                text="𝗥𝗘𝗩𝗜𝗩𝗘 - 𝗛𝗘𝗟𝗣",
                 callback_data="settings_back_helper",
             ),
             InlineKeyboardButton(
@@ -30,13 +30,13 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="𝒜𝒞𝒞𝐸𝒫𝒯 𝑀𝐸 𝐼𝒩 𝒴𝒪𝒰𝑅 𝐵𝒜𝒮𝐸",
+                text=" נσιη мє ιη уσυя вαѕє ",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ],
         [
             InlineKeyboardButton(
-                text="𝓡𝓔𝓥𝓘𝓥𝓔-𝓗𝓔𝓛𝓟", callback_data="settings_back_helper"
+                text="𝗥𝗘𝗩𝗜𝗩𝗘 - 𝗛𝗘𝗟𝗣", callback_data="settings_back_helper"
             )
         ],
         [
