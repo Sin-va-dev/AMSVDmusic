@@ -38,7 +38,7 @@ async def seek_comm(cli, message: Message, _, chat_id):
     duration_to_skip = int(query)
     duration = playing[0]["dur"]
     if message.command[0][-2] == "c":
-        if (duration_played - duration_to_skip) <= 10:
+        if (duration_played - duration_to_skip) <= 2:
             return await message.reply_text(
                 _["admin_31"].format(
                     seconds_to_min(duration_played), duration
