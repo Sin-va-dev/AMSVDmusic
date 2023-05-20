@@ -57,7 +57,7 @@ async def skip(cli, message: Message, _, chat_id):
                             if not check:
                                 try:
                                     await message.reply_text(
-                                        _["admin_10.1"].format(
+                                        _["admin_35"].format(
                                             message.from_user.first_name,
                                             message.chat.title
                                         ),
@@ -87,7 +87,7 @@ async def skip(cli, message: Message, _, chat_id):
                     await auto_clean(popped)
             if not check:
                 await message.reply_text(
-                    _["admin_10.1"].format(message.from_user.first_name, message.chat.title),
+                    _["admin_35"].format(message.from_user.first_name, message.chat.title),
                     reply_markup=close_keyboard
                 )
                 try:
