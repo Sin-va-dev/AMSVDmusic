@@ -24,7 +24,7 @@ async def init():
         and not config.STRING5
     ):
         LOGGER("AM").error(
-            "WTF Baby ! Atleast add a pyrogram string, How Cheap..."
+            "DATA TO BE THRIEVE ! Atleast add a pyrogram string, How Cheap..."
         )
         return
     if (
@@ -57,7 +57,7 @@ async def init():
         )
     except NoActiveGroupCall:
         LOGGER("AM").error(
-            "[ERROR] - \n\nHey Dear, firstly open telegram and turn on voice chat in Logger Group else. If you ever ended voice chat in log group i will stop working."
+            "[ERROR] - \n\nHey LOSER, firstly open telegram and turn on voice chat in Logger Group else. If you ever ended voice chat in log group i will stop working."
         )
         sys.exit()
     except:
