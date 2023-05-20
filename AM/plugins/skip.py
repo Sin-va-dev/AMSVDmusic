@@ -57,7 +57,7 @@ async def skip(cli, message: Message, _, chat_id):
                             if not check:
                                 try:
                                     await message.reply_text(
-                                        _["admin_10"].format(
+                                        _["admin_10.1"].format(
                                             message.from_user.first_name,
                                             message.chat.title
                                         ),
