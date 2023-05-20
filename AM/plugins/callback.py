@@ -113,7 +113,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     return await CallbackQuery.answer(
                         _["admin_19"], show_alert=True
                     )
-    if command == "Fause" or command == "Iru":
+    if command == "Pause" or command == "Iru":
         if not await is_music_playing(chat_id):
             return await CallbackQuery.answer(
                 _["admin_1"], show_alert=True
@@ -137,7 +137,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             _["admin_4"].format(mention),
             reply_markup=close_keyboard
         )
-    elif command == "Stop" or command == "Niruthu":
+    elif command == "Stop" or command == "pothum":
         await CallbackQuery.answer()
         await Anon.stop_stream(chat_id)
         await set_loop(chat_id, 0)
