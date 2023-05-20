@@ -10,9 +10,9 @@ from ..logging import LOGGER
 
 class AnonXBot(Client):
     def __init__(self):
-        LOGGER(__name__).info(f"Starting Bot...")
+        LOGGER(__name__).info(f"Starting The Mission...")
         super().__init__(
-            "AMMusic",
+            "SVDMUSIC",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
@@ -41,4 +41,4 @@ class AnonXBot(Client):
                 "Please promote Bot as Admin in Logger Group"
             )
             sys.exit()
-        LOGGER(__name__).info(f"MusicBot Started as @{self.username}")
+        LOGGER(__name__).info(f"SVDMusicBot Started as @{self.username}")
