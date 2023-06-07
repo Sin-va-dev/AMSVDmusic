@@ -7,16 +7,16 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("12163360"))
+API_HASH = getenv("02862f9111364754b0d4625f6695ba06")
 
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("5671435658:AAEcQprlPqto5g-NrsUabBWC85GYGptbTkU")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Sophia ᴍᴜsɪᴄ")
+MONGO_DB_URI = getenv("MONGO_DB_URI", mongodb+srv://NCsingle:BEST1122334455@cluster0.fee7qv7.mongodb.net/?retryWrites=true&w=majority)
+LOG_GROUP_ID = int(getenv("-984459977"))
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "SVdtestmuSic")
 
-OWNER_ID = list(map(int, getenv("OWNER_ID", "1356469075").split()))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "655594746").split()))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
@@ -25,8 +25,8 @@ UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://telegra.ph/file/712d384e549f37e
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/AbhiModszYT_Return")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/AM_YTSupport")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/SVDsupportchannel")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/SVD_support_group")
 
 SUPPORT_HEHE = SUPPORT_GROUP.split("me/")[1]
 
@@ -58,7 +58,7 @@ TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "104857600"))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824"))
 # https://www.gbmb.org/mb-to-bytes
 
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION1", AQC5mSAAWLfo9UsOfiIdtaxrYOHk1UHJRKl0G38A5GwyJsF80c0NDc7Q_krQV94ozVwPQmJZqMAoKSlQglt5_Q_PW70vKT1MnGYSt_m6eltlTuaVNDDQZaEIQN3XVtbQrnIlmXSa4HEwtn9WqtjeVuSr-6jhfrtU4uuAxLAV_XX8t4sScg8y7R1k7QZIDBG6NlZMkCEEozrClxFlfAd3ZHn8pWYeylmdWYdniM7EhAE1jGU7YP6FEmzSL90AnPoI0mz45_pmR90VJhixTf36FStZ426GrMeY7i_PQPePM4brEG9vEfFBvpuqwpGMXgs61UfvQLOC9IaJaYhqt3Gxj9rKV0YXLQAAAAFIAxACAA)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -76,18 +76,18 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/f20237d3a028a343d595a.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/9dbcb3cf35dc596443320.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://telegra.ph/file/f20237d3a028a343d595a.jpg",
+    "https://telegra.ph/file/9349a004446e5e94abd6b.jpg",
 )
 
-PLAYLIST_IMG_URL = "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg"
+PLAYLIST_IMG_URL = "https://telegra.ph/file/86f81220c410743f1e1b1.jpg"
 
-GLOBAL_IMG_URL = "https://te.legra.ph/file/e906c2def5afe8a9b9120.jpg"
+GLOBAL_IMG_URL = "https://telegra.ph/file/86f81220c410743f1e1b1.jpg"
 
-STATS_IMG_URL = "https://te.legra.ph/file/e906c2def5afe8a9b9120.jpg"
+STATS_IMG_URL = "https://telegra.ph/file/9dbcb3cf35dc596443320.jpg"
 
 TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
 
@@ -130,9 +130,9 @@ if UPSTREAM_REPO:
 if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
-            PING_IMG_URL = "https://telegra.ph/file/f20237d3a028a343d595a.jpg"
+            PING_IMG_URL = "https://telegra.ph/file/9349a004446e5e94abd6b.jpg"
 
 if START_IMG_URL:
     if START_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", START_IMG_URL):
-            START_IMG_URL = "https://telegra.ph/file/f20237d3a028a343d595a.jpg"
+            START_IMG_URL = "https://telegra.ph/file/9dbcb3cf35dc596443320.jpg"
