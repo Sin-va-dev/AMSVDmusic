@@ -12,7 +12,7 @@ API_HASH = getenv("02862f9111364754b0d4625f6695ba06")
 
 BOT_TOKEN = getenv("5671435658:AAEcQprlPqto5g-NrsUabBWC85GYGptbTkU")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", https://ap-south-1.aws.data.mongodb-api.com/app/data-bpcte/endpoint/data/v1)
+MONGO_DB_URI = getenv("MONGO_DB_URI", mongodb+srv://svdncsingle:arnoldhanes1122334455@cluster0.o4tqdw3.mongodb.net/?retryWrites=true&w=majority)
 LOG_GROUP_ID = int(getenv("-984459977"))
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "SVdtestmuSic")
 
