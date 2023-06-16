@@ -165,7 +165,7 @@ async def del_back_playlist(client, CallbackQuery, _):
         )
     elif command == "Skip" or command == "Vera":
         check = db.get(chat_id)
-        txt = f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🙈\n│ \n└ʙʏ : {mention} 🤧"
+        txt = f"--> ᴛᴀᴘᴇ sᴋɪᴩᴩᴇᴅ 🙈\n│ \n└ʙʏ : {mention} 🤧"
         popped = None
         try:
             popped = check.pop(0)
@@ -174,7 +174,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     await auto_clean(popped)
             if not check:
                 await CallbackQuery.edit_message_text(
-                    f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🙈\n│ \n└ʙʏ : {mention} 🤧",
+                    f"--> ᴛᴀᴘᴇ sᴋɪᴩᴩᴇᴅ 🙈\n│ \n└ʙʏ : {mention} 🤧",
                     reply_markup=close_keyboard
                 )
                 await CallbackQuery.message.reply_text(
@@ -187,7 +187,7 @@ async def del_back_playlist(client, CallbackQuery, _):
         except:
             try:
                 await CallbackQuery.edit_message_text(
-                    f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🙈\n│ \n└ʙʏ : {mention} 🤧",
+                    f"--> ᴛᴀᴘᴇ sᴋɪᴩᴩᴇᴅ 🙈\n│ \n└ʙʏ : {mention} 🤧",
                     reply_markup=close_keyboard
                 )
                 await CallbackQuery.message.reply_text(
