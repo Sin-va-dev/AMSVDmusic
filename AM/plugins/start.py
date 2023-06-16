@@ -156,13 +156,13 @@ async def start_comm(client, message: Message, _):
             searched_text = f"""
 😲**ᴛʀᴀᴄᴋ ɪɴғᴏʀɴᴀᴛɪᴏɴ**😲
 
-📌 **PAATU:** {title}
+🥴 **PAATU:** {title}
 
-⏳ **TIMING:** {duration} ᴍɪɴᴜᴛᴇs
-👀 **ᴠɪᴇᴡs:** `{views}`
-⏰ **ᴩᴜʙʟɪsʜᴇᴅ ᴏɴ:** {published}
-🎥 **ᴄʜᴀɴɴᴇʟ:** {channel}
-📎 **ᴄʜᴀɴɴᴇʟ ʟɪɴᴋ:** [ᴠɪsɪᴛ ᴄʜᴀɴɴᴇʟ]({channellink})
+⏳ **ᴛɪᴍᴇ-ᴛʀᴀᴠᴇ:** {duration} ᴍɪɴᴜᴛᴇs
+👀 **ꜱᴇᴇɴ:** `{views}`
+⏰ **ᴘᴏꜱᴛᴇʀ ᴏɴ:** {published}
+🎥 **ᴘᴏꜱᴛᴄᴀʀᴅ:** {channel}
+📎 **ᴘᴏꜱᴛᴄᴀʀᴅ ʟɪɴᴋ:** [ᴠɪsɪᴛ ᴄʜᴀɴɴᴇʟ]({channellink})
 🔗 **ʟɪɴᴋ:** [ᴡᴀᴛᴄʜ ᴏɴ ʏᴏᴜᴛᴜʙᴇ]({link})
 
 💖 sᴇᴀʀᴄʜ ᴩᴏᴡᴇʀᴇᴅ ʙʏ {config.MUSIC_BOT_NAME}"""
@@ -173,7 +173,7 @@ async def start_comm(client, message: Message, _):
                             text="• ʏᴏᴜᴛᴜʙᴇ •", url=f"{link}"
                         ),
                         InlineKeyboardButton(
-                            text="• sᴜᴩᴩᴏʀᴛ •", url="https://t.me/AbhiModszYT_Return"
+                            text="• sᴜᴩᴩᴏʀᴛ •", url="https://t.me/SVD_support_group"
                         ),
                     ],
                 ]
