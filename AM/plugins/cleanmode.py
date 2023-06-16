@@ -21,7 +21,7 @@ from AM.utils.database import (get_active_chats,
 from AM.utils.decorators.language import language
 from AM.utils.formatters import alpha_to_int
 
-BROADCAST_COMMAND = get_command("/satellite")
+BROADCAST_COMMAND = get_command("BROADCAST_COMMAND")
 AUTO_DELETE = config.CLEANMODE_DELETE_MINS
 AUTO_SLEEP = 5
 IS_BROADCASTING = False
