@@ -7,13 +7,13 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID", "23298188"))
-API_HASH = getenv("API_HASH", "49869a9d2c46007cc1c1e002e8f8ef2b")
+API_ID = int(getenv("23298188"))
+API_HASH = getenv("49869a9d2c46007cc1c1e002e8f8ef2b")
 
-BOT_TOKEN = getenv("BOT_TOKEN", "6270407253:AAEmk5-i6CxlWR18MTjkbyiPwnQ2m24ru1c")
+BOT_TOKEN = getenv("6270407253:AAEmk5-i6CxlWR18MTjkbyiPwnQ2m24ru1c")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://svdsquadfun98:Best1122334455@cluster01.sgqldsy.mongodb.net/?retryWrites=true&w=majority")
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001743709729"))
+MONGO_DB_URI = getenv("mongodb+srv://svdsquadfun98:Best1122334455@cluster01.sgqldsy.mongodb.net/?retryWrites=true&w=majority")
+LOG_GROUP_ID = int(getenv("-1001743709729"))
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "™SVD § MuSi©")
 
 OWNER_ID = list(map(int, getenv("OWNER_ID", "655594746").split()))
@@ -21,7 +21,7 @@ OWNER_ID = list(map(int, getenv("OWNER_ID", "655594746").split()))
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://telegra.ph/file/712d384e549f37e74f4a8.mp4")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", "")
 
