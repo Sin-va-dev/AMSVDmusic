@@ -48,8 +48,8 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("AbhiModszYT_Return")
-                await self.one.join_chat("AM_YTSupport")
+                await self.one.join_chat("SVD_support_group")
+                await self.one.join_chat("SVD_support_group")
             except:
                 pass
             assistants.append(1)
